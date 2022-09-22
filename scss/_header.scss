@@ -1,0 +1,16 @@
+.header {
+    padding: 10px 0;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    p {
+        color: #757575;
+        font-size: 15px;
+    }
+}
+.header-button {
+    font-size: 15px;
+    padding: 7px 15px;
+}

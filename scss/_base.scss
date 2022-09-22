@@ -1,0 +1,91 @@
+//Размер шрифта всей страницы
+$htmlFontSize: 120%;
+//Ширина контейнера
+$layoutMaxWidth: 1130px;
+$layoutMinWidth: 375px;
+//Цвет фона
+$bgColor: #fff;
+//Найстройки заголовков
+$hFont : 'Inter', sans-serif;
+$hColor: #000;
+$hWeight : 400;
+$h1Size: 2.4rem;
+$h2Size: 0rem;
+$h3Size: 1.38rem;
+//Настройки параграфа
+$paraFont: 'Inter', sans-serif;
+$paraColor: #000;
+$paraWeight: 400;
+$paraSize: 1rem;
+//Настройка отступов
+$sectionMargin: 6.7rem 0;
+$sectionPadding: 0;
+
+@mixin bgProperty (){
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+section,header,footer,body,ul {
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	margin: $sectionMargin;
+	padding: $sectionPadding;
+}
+html {
+	font-size: $htmlFontSize;
+}
+body {
+	background: $bgColor;
+	font-family: $paraFont;
+}
+
+.container {
+	max-width: $layoutMaxWidth;
+	min-width: $layoutMinWidth;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+h1 {font-size: $h1Size;}
+h2 {font-size: $h2Size;}
+h3 {font-size: $h3Size;}
+
+h1,h2,h3 {
+	color: $hColor;
+	font-weight: $hWeight;
+	font-family: $hFont;
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+p {
+	font-weight: $paraWeight;
+	font-size: $paraSize;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	outline: none;
+	border: none;
+	background: none;
+	cursor: pointer;
+	&:hover {
+		color: rgba(0,0,0,.7);
+		transition: all .2s ease;
+	}
+}
+

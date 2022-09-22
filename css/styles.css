@@ -1,0 +1,179 @@
+section, header, footer, body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 6.7rem 0;
+  padding: 0;
+}
+
+html {
+  font-size: 120%;
+}
+
+body {
+  background: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1130px;
+  min-width: 375px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 0rem;
+}
+
+h3 {
+  font-size: 1.38rem;
+}
+
+h1, h2, h3 {
+  color: #000;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+button:hover {
+  color: rgba(0, 0, 0, 0.7);
+  transition: all 0.2s ease;
+}
+
+.header {
+  padding: 10px 0;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.header__container p {
+  color: #757575;
+  font-size: 15px;
+}
+
+.header-button {
+  font-size: 15px;
+  padding: 7px 15px;
+}
+
+.button {
+  align-self: center;
+  text-align: center;
+  background-color: #E48D8B;
+  color: #fff;
+  font-weight: 700;
+}
+
+.promo__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.promo__text-content {
+  flex: 1 0 42%;
+}
+.promo__text-content p:last-of-type {
+  font-weight: 700;
+  font-size: 31px;
+}
+.promo__text-content span {
+  padding-left: 8px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #757575;
+  text-decoration: line-through;
+}
+
+.promo__bttns {
+  display: flex;
+}
+
+.promo-button {
+  font-weight: 700;
+  padding: 9px 28px;
+  font-size: 0.87rem;
+}
+
+.button-trailer {
+  display: inline-flex;
+  font-size: 0.9rem;
+  margin-left: 12px;
+  align-items: center;
+  color: #757575;
+  background-color: #EDEDED;
+}
+
+.promo__image {
+  align-self: center;
+}
+.promo__image img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.privilege__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.privilege__card {
+  max-width: 30%;
+}
+
+@media (max-width: 821px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media (max-width: 680px) {
+  html {
+    font-size: 80%;
+  }
+}
+@media (max-width: 560px) {
+  .promo__container, .privilege__container {
+    flex-wrap: wrap;
+  }
+  .privilege__card {
+    max-width: 60%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
