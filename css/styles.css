@@ -28,10 +28,12 @@ body {
 
 h1 {
   font-size: 2.4rem;
+  font-weight: 400;
 }
 
 h2 {
-  font-size: 0rem;
+  font-size: 1.8rem;
+  font-weight: 700;
 }
 
 h3 {
@@ -40,7 +42,6 @@ h3 {
 
 h1, h2, h3 {
   color: #000;
-  font-weight: 400;
   font-family: "Inter", sans-serif;
   padding: 0;
   margin: 0;
@@ -81,11 +82,11 @@ button:hover {
 }
 .header__container p {
   color: #757575;
-  font-size: 15px;
+  font-size: 0.8rem;
 }
 
 .header-button {
-  font-size: 15px;
+  font-size: 0.8rem;
   padding: 7px 15px;
 }
 
@@ -101,6 +102,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   gap: 10px;
+  align-items: center;
 }
 
 .promo__text-content {
@@ -136,6 +138,9 @@ button:hover {
   color: #757575;
   background-color: #EDEDED;
 }
+.button-trailer img {
+  padding-right: 5px;
+}
 
 .promo__image {
   align-self: center;
@@ -157,9 +162,37 @@ button:hover {
   max-width: 30%;
 }
 
+.skills__container, .learn__container {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.skills__container img, .learn__container img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.skills__text-content, .learn__text-content {
+  max-width: 44%;
+}
+
 @media (max-width: 821px) {
   html {
     font-size: 90%;
+  }
+  .button-trailer img {
+    max-width: 10%;
+  }
+}
+@media (max-width: 762px) {
+  .learn__container, .skills__container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .learn__text-content, .skills__text-content {
+    max-width: 100%;
   }
 }
 @media (max-width: 680px) {
@@ -170,10 +203,19 @@ button:hover {
 @media (max-width: 560px) {
   .promo__container, .privilege__container {
     flex-wrap: wrap;
+    position: relative;
   }
   .privilege__card {
     max-width: 60%;
     text-align: center;
     margin: 0 auto;
+  }
+  .promo__text-content {
+    margin-top: 100%;
+  }
+  .promo__image {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }

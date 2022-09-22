@@ -8,9 +8,10 @@ $bgColor: #fff;
 //Найстройки заголовков
 $hFont : 'Inter', sans-serif;
 $hColor: #000;
-$hWeight : 400;
+$h1Weight : 400;
+$h2Weight : 700;
 $h1Size: 2.4rem;
-$h2Size: 0rem;
+$h2Size: 1.8rem;
 $h3Size: 1.38rem;
 //Настройки параграфа
 $paraFont: 'Inter', sans-serif;
@@ -53,13 +54,12 @@ body {
 	box-sizing: border-box;
 }
 
-h1 {font-size: $h1Size;}
-h2 {font-size: $h2Size;}
+h1 {font-size: $h1Size;font-weight: $h1Weight;}
+h2 {font-size: $h2Size;font-weight: $h2Weight;}
 h3 {font-size: $h3Size;}
 
 h1,h2,h3 {
 	color: $hColor;
-	font-weight: $hWeight;
 	font-family: $hFont;
 	padding: 0;
 	margin: 0;

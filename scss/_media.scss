@@ -1,5 +1,17 @@
 @media (max-width: 821px){
     html {font-size: 90%;}
+    .button-trailer img{
+        max-width: 10%;
+    }
+}
+@media (max-width: 762px){
+    .learn__container,.skills__container{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .learn__text-content,.skills__text-content{
+        max-width: 100%;
+    }
 }
 @media (max-width: 680px){
     html {font-size: 80%;}
@@ -7,11 +19,20 @@
 @media (max-width: 560px){
     .promo__container,.privilege__container {
         flex-wrap: wrap;
+        position: relative;
     }
     .privilege__card {
         max-width: 60%;
         text-align: center;
         margin: 0 auto;
+    }
+    .promo__text-content{
+        margin-top: 100%;
+    }
+    .promo__image {
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 }
 
