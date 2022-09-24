@@ -79,6 +79,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   gap: 10px;
+  flex-wrap: wrap;
 }
 .header__container p {
   color: #757575;
@@ -178,12 +179,105 @@ button:hover {
   max-width: 44%;
 }
 
+.included {
+  background-color: #017CFF;
+  padding: 95px 0;
+}
+
+.included__container, .included__container h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.included__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 47px;
+}
+
+.included__item p {
+  margin: 0;
+  padding: 0;
+}
+.included__item p:first-of-type {
+  font-weight: 700;
+  font-size: 4.44rem;
+  padding-bottom: 28px;
+}
+
+.ideas__container {
+  text-align: center;
+}
+
+.ideas__drop-down_list {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+.ideas__drop-down_list ul {
+  width: 33rem;
+}
+.ideas__drop-down_list li {
+  flex: 1 1 100%;
+  margin-top: 12px;
+  padding: 0 24px;
+  gap: 10px;
+  background-color: #EDEDED;
+  display: flex;
+  justify-content: space-between;
+}
+
+.more_skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+.more_skills__list li {
+  max-width: 22.5%;
+  padding-top: 48px;
+}
+.more_skills__list li p {
+  padding-top: 10px;
+  margin: 0;
+  font-size: 16px;
+}
+
+.quoteblock {
+  background-color: #194677;
+}
+
+.quoteblock__container {
+  text-align: center;
+  color: #fff;
+}
+.quoteblock__container figure {
+  padding: 95px 0;
+}
+.quoteblock__container blockquote {
+  font-size: 1.38rem;
+  font-style: italic;
+  max-width: 30rem;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+.quoteblock__container span {
+  color: #E48D8B;
+}
+.quoteblock__container p {
+  font-size: 0.9rem;
+}
+
 @media (max-width: 821px) {
   html {
     font-size: 90%;
   }
   .button-trailer img {
     max-width: 10%;
+  }
+  .more_skills__list li {
+    max-width: 30%;
   }
 }
 @media (max-width: 762px) {
@@ -198,6 +292,13 @@ button:hover {
 @media (max-width: 680px) {
   html {
     font-size: 80%;
+  }
+  .more_skills__list {
+    justify-content: center;
+  }
+  .more_skills__list li {
+    text-align: center;
+    max-width: 50%;
   }
 }
 @media (max-width: 560px) {
@@ -217,5 +318,19 @@ button:hover {
     position: absolute;
     top: 0;
     left: 0;
+  }
+  .included__list {
+    flex-wrap: wrap;
+  }
+  .included__list li {
+    flex: 1 1 45%;
+  }
+}
+@media (max-width: 379px) {
+  .included__list li {
+    flex: 1 1 100%;
+  }
+  .header__container p {
+    display: none;
   }
 }

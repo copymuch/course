@@ -3,6 +3,9 @@
     .button-trailer img{
         max-width: 10%;
     }
+    .more_skills__list li {
+        max-width: 30%;
+    }
 }
 @media (max-width: 762px){
     .learn__container,.skills__container{
@@ -15,6 +18,13 @@
 }
 @media (max-width: 680px){
     html {font-size: 80%;}
+    .more_skills__list {
+        justify-content: center;
+    li {
+        text-align: center;
+        max-width: 50%;
+    }
+}
 }
 @media (max-width: 560px){
     .promo__container,.privilege__container {
@@ -33,6 +43,22 @@
         position: absolute;
         top: 0;
         left: 0;
+    }
+    .included__list {
+        flex-wrap: wrap;
+        li {
+            flex: 1 1 45%;
+        }
+    }
+}
+@media (max-width: 379px){
+    .included__list {
+        li {
+            flex: 1 1 100%;
+        }
+    }
+    .header__container p {
+        display: none;
     }
 }
 
