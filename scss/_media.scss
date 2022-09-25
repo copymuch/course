@@ -50,6 +50,9 @@
             flex: 1 1 45%;
         }
     }
+    .podcast__cards {
+        flex-wrap: wrap;
+    }
 }
 @media (max-width: 379px){
     .included__list {
