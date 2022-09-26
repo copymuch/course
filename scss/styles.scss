@@ -285,37 +285,5 @@
         }
     }
 }
-footer {
-    background-color: #FBFBFB;
-}
-.footer__container {
-    display: flex;
-    justify-content: space-between;
-    padding: 64px 0;
-}
-.footer__text-content {
-    max-width: 35%;
-}
-.span--little {
-    font-size: 14px;
-}
-.footer__lists {
-    display: flex;
-    gap: 80px;
-}
-.footer__list {
-    h3 {
-        font-size: 14px;
-        color: #B1B1B1;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-    }
-    font-size: 14px;
-    li {
-        padding-top: 7px;
-    }
-}
-.footer__link {
-}
+@import "_footer";
 @import "_media";
