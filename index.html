@@ -17,7 +17,7 @@
         <div class="header__container container">
             <img src="img/icons/logo.svg" alt="logo" class="logo">
             <p>LAUNCH A SUCCESSFUL PODCAST</p>
-            <button class="header-button button">Enroll Now</button>
+            <button class="header__button button">Enroll Now</button>
         </div>
     </header>
     <main>
@@ -29,8 +29,8 @@
                         labore et dolore magna aliqua.</p>
                     <p>$189<span class="promo-span">$399</span></p>
                     <div class="promo__bttns">
-                        <button class="promo-button button">Enroll Now</button>
-                        <button class="promo-button button-trailer">
+                        <button class="promo__button button">Enroll Now</button>
+                        <button class="promo__button button-trailer">
                             <img src="img/icons/arrow.svg" alt="arrow">
                             Watch Trailer
                         </button>
@@ -119,7 +119,7 @@
         <section class="ideas">
             <div class="ideas__container container">
                 <h2>The Course Curriculum</h2>
-                <div class="ideas__drop-down_list">
+                <div class="ideas__list">
                     <ul>
                         <li>
                             <p>Outlining your Idea</p>
@@ -149,10 +149,10 @@
                 </div>
             </div>
         </section>
-        <section class="more_skills">
-            <div class="more_skills__container container">
+        <section class="more-skills">
+            <div class="more-skills__container container">
                 <h2>By the end of the 4-week course...</h2>
-                <ul class="more_skills__list">
+                <ul class="more-skills__list">
                     <li>
                         <img src="img/icons/microphone.svg" alt="microphone">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -212,19 +212,36 @@
                 </figure>
             </div>
         </section>
+        <section class="questions">
+            <div class="questions__container container">
+                <h2>Any Questions?</h2>
+                <div class="questions__list">
+                    <ul>
+                        <li class="questions__item">How long is the course? <img src="img/icons/arrowDown.svg"
+                                alt="arrow"></li>
+                        <li class="questions__item">When does the next intake start? <img src="img/icons/arrowDown.svg"
+                                alt="arrow"></li>
+                        <li class="questions__item">I'm not sure if this course is suitable for me? <img
+                                src="img/icons/arrowDown.svg" alt="arrow"></li>
+                        <li class="questions__item">How long do I have to complete the course? <img
+                                src="img/icons/arrowDown.svg" alt="arrow"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
         <section class="podcast">
             <div class="podcast__container conatiner">
                 <h2>It's Time to Start Your Podcast</h2>
                 <div class="podcast__cards">
                     <article class="podcast__card">
-                        <div class="podcast__card-text_content">
+                        <div class="card__text-content">
                             <img src="img/icons/book.svg" alt="book">
                             <h3>Essential</h3>
-                            <p>$189 <span class="podcast-span">$399</span></p>
+                            <p>$189 <span class="card__span">$399</span></p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <button class="podcast-button">Get Access Now</button>
+                            <button class="card__button">Get Access Now</button>
                         </div>
-                        <div class="podcast_card-list">
+                        <div class="card__list">
                             <ul>
                                 <li>
                                     <img src="img/icons/checkMark.svg" alt="check">
@@ -246,14 +263,14 @@
                         </div>
                     </article>
                     <article class="podcast__card">
-                        <div class="podcast__card-text_content">
+                        <div class="card__text-content">
                             <img src="img/icons/books.svg" alt="books">
                             <h3>Premium</h3>
-                            <p>$399 <span class="podcast-span">$899</span></p>
+                            <p>$399 <span class="card__span">$899</span></p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <button class="podcast-button">Get Access Now</button>
+                            <button class="card__button">Get Access Now</button>
                         </div>
-                        <div class="podcast_card-list">
+                        <div class="card__list">
                             <ul>
                                 <li>
                                     <img src="img/icons/checkMark.svg" alt="check">
@@ -289,8 +306,127 @@
                 </div>
             </div>
         </section>
+        <section class="praise">
+            <div class="praise__container container">
+                <h2>More Praise From our Students</h2>
+                <div class="praise__block">
+                    <div class="block__quote">
+                        <img src="img/icons/star.svg" alt="star">
+                        <figure>
+                            <blockquote>
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                            </blockquote>
+                            <figcaption>
+                                <img src="img/userMin.png" alt="user">
+                                <p>Jamie Matthew</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="block__quote">
+                        <img src="img/icons/star.svg" alt="star">
+                        <figure>
+                            <blockquote>
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua."
+                            </blockquote>
+                            <figcaption>
+                                <img src="img/userMin.png" alt="user">
+                                <p>Jamie Matthew</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="block__quote">
+                        <img src="img/icons/star.svg" alt="star">
+                        <figure>
+                            <blockquote>
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation."
+                            </blockquote>
+                            <figcaption>
+                                <img src="img/userMin.png" alt="user">
+                                <p>Jamie Matthew</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="block__quote">
+                        <img src="img/icons/star.svg" alt="star">
+                        <figure>
+                            <blockquote>
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation."
+                            </blockquote>
+                            <figcaption>
+                                <img src="img/userMin.png" alt="user">
+                                <p>Jamie Matthew</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="block__quote">
+                        <img src="img/icons/star.svg" alt="star">
+                        <figure>
+                            <blockquote>
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                            </blockquote>
+                            <figcaption>
+                                <img src="img/userMin.png" alt="user">
+                                <p>Jamie Matthew</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="block__quote">
+                        <img src="img/icons/star.svg" alt="star">
+                        <figure>
+                            <blockquote>
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua."
+                            </blockquote>
+                            <figcaption>
+                                <img src="img/userMin.png" alt="user">
+                                <p>Jamie Matthew</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__text-content">
+                <img src="img/icons/logo.svg" alt="logo">
+                <p>The last landing page you'll ever need to launch your next course.</p>
+                <span class="span--little">Design by Nikolai Bain Built by A.Mahnev</span>
+            </div>
+            <div class="footer__lists">
+                <div class="footer__list">
+                    <h3>Site</h3>
+                    <ul>
+                        <li><a class="footer__link">Home</a></li>
+                        <li><a class="footer__link">Contact</a></li>
+                        <li><a class="footer__link">FAQs</a></li>
+                        <li><a class="footer__link">Terms</a></li>
+                        <li><a class="footer__link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer__list">
+                    <h3>Admin</h3>
+                    <ul>
+                        <li><a class="footer__link">Style Guide</a></li>
+                        <li><a class="footer__link">Licenses</a></li>
+                        <li><a class="footer__link">Instructions</a></li>
+                        <li><a class="footer__link">Password</a></li>
+                        <li><a class="footer__link">404</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

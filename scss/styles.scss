@@ -34,7 +34,7 @@
 .promo__bttns {
     display: flex;
 }
-.promo-button {
+.promo__button {
     font-weight: 700;
     padding: 9px 28px;
     font-size: 0.87rem;
@@ -115,7 +115,7 @@
     text-align: center;
 }
 
-.ideas__drop-down_list {
+.ideas__list {
     display: flex;
     justify-content: center;
     padding-top: 60px;
@@ -133,7 +133,7 @@
     }
 }
 
-.more_skills__list {
+.more-skills__list {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -205,27 +205,117 @@
     background-color: #fff;
     max-width: 20.8rem;
 }
-.podcast__card-text_content {
+.card__text-content {
     margin: 0 auto;
     text-align: center;
     max-width: 70%;
     padding-top: 2.6rem;
 }
-.podcast-span {
+.card__span {
     font-size: 0.9rem;
     color: #757575;
 }
-.podcast-button {
+.card__button {
     font-size: 0.9rem;
     background-color: #017CFF;
     color: #fff;
     padding: 8px 32px;
 }
-.podcast_card-list {
+.card__list {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     padding: 3.1rem 28px;
+}
+
+.questions__container {
+    text-align: center;
+    h2 {
+        font-weight: 400;
+    }
+}
+.questions__list {
+    padding-top: 2.2rem;
+    margin: 0 auto;
+    li {
+        font-size: 1.22rem;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #DBDBDB;
+        padding: 33px 0;
+    }
+}
+
+.praise__container {
+    h2 {
+        text-align: center;
+    }
+}
+.praise__block {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2.6rem;
+    gap: 32px;
+}
+.block__quote {
+    display: inline-flex;
+    flex: 1 1 20%;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #EDEDED;
+    padding: 32px;
+    figure {
+        padding: 0;
+        margin: 0;
+    }
+    blockquote,p {
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+    }
+    blockquote {
+        padding: 24px 0 16px 0;
+    }
+    figcaption {
+        display: flex;
+        align-items: center;
+        p {
+            padding-left: 10px;
+        }
+    }
+}
+footer {
+    background-color: #FBFBFB;
+}
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 64px 0;
+}
+.footer__text-content {
+    max-width: 35%;
+}
+.span--little {
+    font-size: 14px;
+}
+.footer__lists {
+    display: flex;
+    gap: 80px;
+}
+.footer__list {
+    h3 {
+        font-size: 14px;
+        color: #B1B1B1;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    font-size: 14px;
+    li {
+        padding-top: 7px;
+    }
+}
+.footer__link {
 }
 @import "_media";

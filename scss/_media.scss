@@ -1,9 +1,14 @@
+@media (max-width: 1000px){
+    .block__quote {
+        flex: 1 1 30%;
+    }
+}
 @media (max-width: 821px){
     html {font-size: 90%;}
     .button-trailer img{
         max-width: 10%;
     }
-    .more_skills__list li {
+    .more-skills__list li {
         max-width: 30%;
     }
 }
@@ -15,10 +20,13 @@
     .learn__text-content,.skills__text-content{
         max-width: 100%;
     }
+    .block__quote {
+        flex: 1 1 50%;
+    }
 }
 @media (max-width: 680px){
     html {font-size: 80%;}
-    .more_skills__list {
+    .more-skills__list {
         justify-content: center;
     li {
         text-align: center;
@@ -52,6 +60,16 @@
     }
     .podcast__cards {
         flex-wrap: wrap;
+    }
+    .footer__container {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    .footer__text-content {
+        max-width: 100%;
+        margin-bottom: 35px;
+
     }
 }
 @media (max-width: 379px){
